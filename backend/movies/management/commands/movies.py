@@ -4,17 +4,17 @@ import random
 from django.core.management.base import BaseCommand
 from movies.models import Movie, Person, MovieActor, MovieGenre, Genre
 
-# ----------------------------
+# ============================================================
 # Predefined Genres
-# ----------------------------
+# ============================================================
 GENRE_NAMES = [
     "Action", "Adventure", "Drama", "Comedy", "Thriller",
     "Horror", "Sci-Fi", "Fantasy", "Romance", "Mystery"
 ]
 
-# ----------------------------
-# Movie Data (50 movies, real posters, actors, and directors)
-# ----------------------------
+# ============================================================
+# Movie Data ( 
+# ============================================================
 MOVIE_DATA = [
     {
         "title": "Interstellar",
@@ -278,9 +278,9 @@ MOVIE_DATA = [
 ]
 
 
-# ----------------------------
+# ============================================================
 # Management Command
-# ----------------------------
+# ============================================================
 class Command(BaseCommand):
     help = "Populate database with 50 movies with real actors, directors, and posters"
 
