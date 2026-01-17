@@ -58,7 +58,7 @@ test-backend:
 
 # Frontend tests
 test-frontend:
-	cd frontend && npm test -- --run
+	cd frontend && npm ci && npm test -- --run
 
 # All tests
 test:

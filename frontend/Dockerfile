@@ -1,4 +1,14 @@
-# Build stage
+FROM node:20-alpine AS test
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY . .
+RUN echo "=== RUNNING FRONTEND TESTS ===" && npm test -- --run --reporter=verbose
+
+# ======== Build stage ========
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -19,7 +29,7 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Production stage
+# ======== Production stage ========
 FROM nginx:alpine
 
 # Copy built files from builder
