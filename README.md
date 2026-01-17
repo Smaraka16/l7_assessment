@@ -24,7 +24,7 @@ API: http://localhost:8000/api
 2. http://127.0.0.1:8000/api/docs/swagger/
 
 
-3.http://127.0.0.1:8000/api/docs/redoc/
+3. http://127.0.0.1:8000/api/docs/redoc/
 
 
 
