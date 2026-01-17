@@ -11,7 +11,7 @@ services:
       - backend_static:/app/staticfiles
       - backend_media:/app/media
     environment:
-      - DEBUG=True
+      - DEBUG=False
       - ALLOWED_HOSTS=localhost,127.0.0.1,backend
       - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,http://localhost:80
     networks:

@@ -72,4 +72,7 @@ clean:
 # Rebuild and start
 rebuild:
 	docker-compose up --build -d
-
+	
+# flush db 
+flush:
+	docker-compose exec backend python manage.py flush --no-input
