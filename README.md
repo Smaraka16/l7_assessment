@@ -1,8 +1,8 @@
-# Movie Explorer
+# MOVIE EXPLORER
 
 Django + React movie app.
 
-## Start
+## START APPLICATION
 
 make up
 
@@ -14,7 +14,21 @@ Frontend: http://localhost:3000
 
 API: http://localhost:8000/api
 
-## Commands
+
+## VIEW SWAGGER DOCS
+
+
+1. http://127.0.0.1:8000/api/schema/
+
+
+2. http://127.0.0.1:8000/api/docs/swagger/
+
+
+3.http://127.0.0.1:8000/api/docs/redoc/
+
+
+
+## COMMANDS
 
 make up - start containers
 
@@ -59,5 +73,9 @@ How to use it:
 
 3. Go to http://localhost:3000 and use the app
 
+
+## NOTE
+
+Code is shipped with default "db.sqlite"
 
 
