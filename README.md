@@ -50,6 +50,8 @@ make test-backend - python tests
 
 make test-frontend - react tests
 
+make test - run both backend & frontend tests
+
 
 
 ## How It Works
