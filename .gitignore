@@ -1,0 +1,90 @@
+############################
+# OS / Editor
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+.vscode/
+.idea/
+
+############################
+# Python / Django
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Django
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+local_settings.py
+
+############################
+# React / Node
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# React build output
+build/
+dist/
+
+############################
+# Docker
+############################
+docker-data/
+docker-volumes/
+**/docker-volumes/
+
+# Docker runtime files
+*.pid
+*.tar
+*.tmp
+
+# Docker compose overrides & secrets
+docker-compose.override.yml
+docker-compose.*.yml
+!.docker-compose.yml
+
+# Docker env files
+.env.docker
+.env.docker.*
+
+############################
+# Test / Coverage
+############################
+coverage/
+htmlcov/
+.pytest_cache/
+.tox/
+jest-cache/
+
+############################
+# Secrets / Keys
+############################
+*.key
+*.pem
+*.crt
